@@ -1,7 +1,6 @@
 
 const Discord = require('discord.js');
 const tpoints = {};
-const fs = require("fs");
 const vpoints = {};
 const jimp = require("jimp");
 const client = new Discord.Client();
@@ -35,7 +34,7 @@ client.on('ready', () => {
 
 
 
-var fs = require('fs')
+const fs = require("fs");
  const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
   let banse = new Set();
   client.on('guildBanAdd', function(guild) {
