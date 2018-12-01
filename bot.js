@@ -185,7 +185,7 @@ client.user.setStatus("online")
 
 let antihack = JSON.parse(fs.readFileSync('./antihack.json' , 'utf8'));//require antihack.json file
 client.on('message', message => {
-    if(message.content.startsWith(prefix + "toggleAntihack")) {
+    if(message.content.startsWith("$toggleAntihack")) {
         if(!message.channel.guild) return message.reply('**This Command Only For Servers**');
         if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send('**Sorry But You Dont Have Permission** `MANAGE_GUILD`' );
         if(!antihack[message.guild.id]) antihack[message.guild.id] = {
