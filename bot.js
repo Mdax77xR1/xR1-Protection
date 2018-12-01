@@ -332,7 +332,7 @@ const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));//require data.j
           if (err) console.log(err.message);
       });
   })
-//By Alpha Codes And Edited By OrochiX
+//By xR1Server Edited By Mdax
 
 
 
