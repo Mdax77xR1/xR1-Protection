@@ -205,7 +205,6 @@ client.on('message', message => {
         })
         //antihack with ON , OFF ! RARE CODE
         //LIKE PLUSBOT !
-const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));//require data.json file
   let banse = new Set();
   let bane = JSON.parse(fs.readFileSync('./data1.json' , 'utf8'));//require data1.json
   client.on('guildBanAdd', function(guild) {
